@@ -1,0 +1,235 @@
+* {
+    box-sizing: border-box;
+}
+
+/*-----------------------ABOUT/HOME PAGE------------------------*/
+header {
+    background-color: #ffffff;
+    border-bottom: 2px solid #cccccc;
+    height: 90px;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    z-index: 2;
+}
+
+.header_wrapper {
+    width: 960px;
+    margin: 0 auto;
+}
+
+#header_title {
+    height: 90px;
+    width: 250px;
+    display: inline-block;
+    text-align: center;
+    font-family: 'Georgia', Times, Times New Roman, serif;
+    color: white;
+    background-color: #4aaaa5;
+}
+
+#header_title:hover {
+    cursor: pointer;
+}
+
+h1 a:link,
+h1 a:active,
+h1 a:visited {
+    text-decoration: none;
+    color: white;
+}
+
+h2 {
+    color: #4aaaa5;
+    font-family: 'Georgia', Times, Times New Roman, serif;
+    font-size: 1.7em;
+}
+
+nav {
+    /* display: inline-block; */
+    float: right;
+    margin-top: 15px;
+}
+
+
+nav li {
+    color: black;
+    display: inline-block;
+    border-right: 1.2px solid lightgray;
+    font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
+    /* margin: 5px 10px 0 5px; */
+    padding: 0 10px;
+}
+
+
+nav li:last-of-type {
+    border-right: none;
+}
+
+nav a:link,
+nav a:active,
+nav a:visited {
+    text-decoration: none;
+    color:grey;;
+}
+
+body {
+    background-image: url('../images/background.png');
+    width: 100%;
+    /* height: 100%; */
+    margin: 0px;
+    padding: 0px;
+    overflow-x: hidden;
+}
+
+main {
+    padding-top: 150px;
+}
+
+/*-----MAIN CONTENT-----*/
+.wrapper { 
+    width: 960px;
+    margin: 0 auto;
+    background-color: #ffffff;
+    border: 1px solid #dddddd;
+    padding: 20px 30px;
+    line-height: 1.7em;
+    margin-bottom: 100px;
+}
+
+.wrapper p {
+    font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
+}
+
+#img_profile{
+    float: left;
+    margin: 14px 10px 10px 0px;
+}
+
+footer {
+    width: 100%;
+    height: 60px;
+    background-color: #666666;
+    position: fixed;
+    bottom: 0;
+    border-top: 10px solid #4aaaa5;
+    text-align: center;
+    color: white;
+    font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
+    z-index: 2;
+}
+
+/*------------------END OF ABOUT/HOME PAGE------------------------*/
+
+/*-----------------------PORTFOLIO------------------------*/
+
+.img-container{
+    width: 270px;
+    height: 200px;
+    background-image: url('../images/portfolio/ph3.jpg');
+    background-position: 50% 50%;
+    background-size: cover;
+    margin: 20px 40px 40px 0;
+}
+
+#ph1 {
+    background-image: url('../images/portfolio/ph1.jpg');
+}
+
+#ph2 {
+    background-image: url('../images/portfolio/ph2.jpg');
+}
+
+#ph3 {
+    background-image: url('../images/portfolio/ph3.jpg');
+}
+
+#ph4 {
+    background-image: url('../images/portfolio/ph4.jpg');
+}
+
+#ph5 {
+    background-image: url('../images/portfolio/ph5.jpg');
+}
+
+.image_text {
+    /* width: 100%; */
+    height: 60px;
+    background-color: #4aaaa5;  
+    position: relative;
+    top: 65%;
+    color: white;
+    font-family: 'Georgia', Times, Times New Roman, serif;
+    font-size: 1.5em;
+    padding-top: 20px;
+    text-align: center;
+    z-index: 1;
+}
+
+.image_text:hover {
+    cursor: pointer;
+    color: rgb(235, 235, 201);
+}
+
+.img_container_col1 {
+    float: left;
+    /* display: inline-block; */
+}
+
+.img_container_col2 {
+    /* display: inline-block;
+    max-height: 680px;
+    margin-top: -200px; */
+    float: left;
+}
+
+.group::after{
+    content: '';
+    display: table;
+    clear: both;
+  }
+
+/*-------------------END OF PORTFOLIO------------------------*/
+
+/*-------------------CONTACT---------------------------*/
+
+form {
+    font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
+    color: grey;
+    line-height: 2.5em;
+}
+
+#inp_name,
+#inp_email,
+#text_message {
+    height: 36px;
+    width: 100%;
+}
+
+#text_message {
+    height: 200px; /*overrides height set in previous rule*/
+}
+
+#inp_name::placeholder,
+#inp_email::placeholder {
+    color: lightgrey;
+}
+
+#btn_submit {
+    background-color: #4aaaa5;
+    color: white;
+    width: 114px;
+    height: 42px;
+    border: 0;
+    box-shadow: none;
+    border-radius: 0px;
+}
+
+#btn_submit:hover,
+#header_title:hover {
+    background-color:#31726f;
+}
+
+#btn_submit:active {
+    background-color:#285e5b;
+}
