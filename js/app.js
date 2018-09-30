@@ -1,7 +1,6 @@
 console.log('js online');
 
 const header_title = document.getElementById('header_title');
-const ph1 = document.getElementById('ph1');
 
 header_title.addEventListener('click', (e)=> {
     window.location.href = '../Basic-Portfolio/index.html';
@@ -11,8 +10,7 @@ document.addEventListener('click', (e)=>{
     if(e.target.parentNode.className == 'img-container') {
         console.log(e.target.parentNode.id);
         let id = e.target.parentNode.id;
-        console.log(id);
-        //var img = document.getElementById(id);
+        //console.log(id);
         var url = `assets/images/portfolio/${id}.jpg`;
         window.open(url,'Image','width=largeImage.stylewidth,height=largeImage.style.height,resizable=1');
     }
