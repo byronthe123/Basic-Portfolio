@@ -1,4 +1,4 @@
-console.log('js online');
+//console.log('js online');
 
 const header_title = document.getElementById('header_title');
 
@@ -8,7 +8,7 @@ header_title.addEventListener('click', (e)=> {
 
 document.addEventListener('click', (e)=>{
     if(e.target.parentNode.className == 'img-container') {
-        console.log(e.target.parentNode.id);
+        //console.log(e.target.parentNode.id);
         let id = e.target.parentNode.id;
         //console.log(id);
         var url = `assets/images/portfolio/${id}.jpg`;
